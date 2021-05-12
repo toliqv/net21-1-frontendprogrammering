@@ -1,0 +1,19 @@
+Tbsftr13!
+
+
+Hej min mor har beställt bredband fiber och fått en Telia Wifi Router F@st 5370e hemskickad som vi har kopplat in i mediaboxen som heter PacketFront med sitt fiberuttag. När vi kör Telia Smart Wifi-assistenten så fastnar den vid att den inte hittar "Extendern". Ska vi ha fått någon sådan skickad inför uppstart? Eller räcker det med att koppla in routern i vår egen mediabox med fiberuttag?  
+
+
+
+
+Adobe XD
+
+mono? 2:06
+missade 02:20 - 02:33
+missade 6:02 - om html.json
+gå igenom 6:20-6:40 igen om git-kopplingen
+infoga i livedelen? 07:03
+shift alt f
+
+
+rem, flex, vh, gap, grid mycket nytt idag

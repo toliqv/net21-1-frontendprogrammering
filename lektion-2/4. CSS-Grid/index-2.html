@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .item {
+            border: 1px solid rgb(214, 214, 214);
+            padding: 1rem;
+        }
+    
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-auto-rows: minmax(100px, auto);
+
+            grid-template-areas:    "header header"
+                                    "sidemenu main"
+                                    "footer footer"
+                                    ;
+        }
+
+        #item-1 {
+            grid-area: header;
+        }
+        #item-2 {
+            grid-area: sidemenu;
+        }
+        #item-3 {
+            grid-area: main;
+        }
+        #item-4 {
+            grid-area: footer;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="grid">
+        <div id="item-1" class="item">HEADER</div>
+        <div id="item-2" class="item">SIDE MENU</div>
+        <div id="item-3" class="item">MAIN CONTENT</div>     
+        <div id="item-4" class="item">FOOTER</div>
+    </div>
+</body>
+</html>
