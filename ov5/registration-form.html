@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <script src="https://kit.fontawesome.com/124ac6c2b5.js" crossorigin="anonymous"></script>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+      <link rel="stylesheet" href="style.css">
+      <title>Registrera dig | Webbsidan</title>
+</head>
+ 
+<body>
+  
+  <div class="container mt-3">
+    <header>
+      <h3>Registrera dig</h3>
+      <h4>Fyll i informationen i detta formulär.</h4>
+    </header>
+     
+    <form onsubmit="submitRegForm(event)" novalidate>
+        <div class="form-item box-item">
+          <input type="text" id="firstName" class="tx1" placeholder="Förnamn" onkeyup="validateName(event)">
+          <div id="firstNameError" class="error"></div>
+        </div>
+        <div class="form-item box-item">
+          <input type="text" id="lastName" placeholder="Efternamn" class="tx1" onkeyup="validateName(event)">
+          <div id="lastNameError" class="error"></div>
+        </div>
+        <div class="form-item box-item">
+          <input type="email" id="email" placeholder="E-post" class="tx1" onkeyup="validateEmail(event)">
+          <div id="emailError" class="error"></div>
+        </div>
+        <div class="form-item box-item">
+          <input type="text" id="username" placeholder="Användarnamn" class="tx1" onkeyup="validateUsername(event)">
+          <div id="usernameError" class="error"></div>
+      </div>
+      
+       <div class="form-item box-item">
+        <input name="password" id="password" placeholder="Lösenord" class="tx1"  type="password" onkeyup="validatePassword(event)">
+        <div id="passwordError" class="error"></div>
+      </div>
+
+      <div class="form-item box-item">
+        <input name="confirm_password" id="confirm_password" placeholder="Upprepa lösenord" class="tx1"  type="password" onkeyup="validateConfirmPassword(event)">
+        <div id="confirm_passwordError" class="error"></div>
+      </div>
+        
+      <div class="form-item box-item">
+        <input type="password" name="confirm_password" id="confirm_password" class="tx1" placeholder="Verifiera lösenord" onkeyup="validateCheckPassword(event)"> 
+        <span id="message"></span>
+      </div>
+
+
+
+<div>&nbsp;</div>
+
+
+        <div class="form-item box-item">
+          <input type="text" id="adress" class="tx1" placeholder="Adress">
+        </div>
+
+        <div class="form-item-double box-item">
+          <div class="form-item box-item">
+            <input type="number" id="postalCode" placeholder="Postnummer">
+          </div>
+        </div>
+        <div class="form-item box-item">
+          <input type="text" name="ort" placeholder="Ort" data-required data-number data-count="10">
+        </div>
+        <button class="submit">Skicka</button>
+
+    </form>
+     
+    <footer>
+      <p>Har du redan ett konto? <a href="#">Logga in</a></p>
+    </footer>
+    <i class="wave"></i>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+  <script src="function.js"></script>
+ 
+ 
+ 
+ 
+</body>
+ 
+</html>

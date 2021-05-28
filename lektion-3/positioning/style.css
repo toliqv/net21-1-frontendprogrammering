@@ -1,0 +1,66 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+    border: 1px dotted black
+}
+
+.border {
+    border: 3px dotted #cecece;
+}
+
+.space {
+    height: 5000px;
+}
+
+
+#parent {
+    margin-top: 150px;
+    height: 500px;
+    width: 500px;
+}
+
+#child {
+    height: 100px;
+    width: 100px;
+    background: aquamarine;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.positioning {
+    /* position: static; */
+    /* position: fixed; */
+    /* position: sticky; */
+    /* position: relative; */
+    position: absolute;
+
+    top: -15px;
+    left: -15px;
+    /* right: 0; */
+    /* bottom: 0; */
+
+    z-index: -1;
+}
+
+
+#parent {
+    position: relative;
+    background-color:beige;
+}
+
+.container {
+    position: relative;
+    background-color:azure;
+    z-index: -2;
+}

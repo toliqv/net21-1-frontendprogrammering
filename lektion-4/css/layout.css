@@ -1,0 +1,25 @@
+.wrapper {
+    display: grid;
+    grid-template-areas: "nav"
+                         "showcase-second"
+                         "showcase-first"
+                         "aboutus-first"
+                         "aboutus-second"
+                         "features"
+                         "screens"
+                         "contactus"
+                         "footer";
+}
+
+@media (min-width: 992px) {
+    .wrapper {
+        display: grid;
+        grid-template-areas: "nav nav"
+                             "showcase-first showcase-second"
+                             "aboutus-first aboutus-second"
+                             "features-first features-second"
+                             "screens"
+                             "contactus"
+                             "footer";
+    }
+}

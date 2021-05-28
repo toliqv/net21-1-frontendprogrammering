@@ -1,0 +1,386 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;500;700;900&display=swap');
+
+/* 
+    . = class - får användas flera gånger på en sida
+    # = id - får endast användas en gång på en sida
+    html-tag = alla html-taggar av den här sorten (ex. div)  - kan förekomma flera gånger
+*/
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #333333;
+}
+
+.btn {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    border-radius: 12px;
+    padding: 13px 22px;
+    min-height: 50px;
+    min-width: 160px;
+}
+.btn-check:focus + .btn, .btn:focus {
+    box-shadow: 0 0 0 0 rgba(13, 110, 253, 0.25);
+}
+
+
+.btn-warning {
+    color: #ffffff;
+    background-color: #ffbb00;
+    border-color: #ffbb00;
+}
+
+.btn-warning:hover,
+.btn-check:focus + .btn-warning, .btn-warning:focus,
+.btn-check:checked + .btn-warning, .btn-check:active + .btn-warning, .btn-warning:active, .btn-warning.active, .show > .btn-warning.dropdown-toggle {
+    color: #ffffff;
+}
+   
+.btn-warning:disabled, .btn-warning.disabled {
+    color: #ffffff;
+    background-color: #ffda75;
+    border-color: #ffda75;
+}
+
+header {
+    padding-bottom: 3rem;
+}
+
+/* navbar */
+
+.navbar {
+    background-color: #2791fc;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff;
+    font-weight: 500;
+    margin-right: 1rem;
+}
+.navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link:focus {
+    color: #ffbb00;
+}
+.navbar-dark .navbar-nav .nav-link:hover::after, .navbar-dark .navbar-nav .nav-link:focus::after {
+    content: "";
+    border-bottom: 3px solid #ffbb00;
+    display: block;
+    width: 60%;
+}
+
+.navbar-dark .navbar-nav .nav-link.active {
+    color: #ffbb00;
+}
+.navbar-dark .navbar-nav .nav-link.active::after {
+    content: "";
+    border-bottom: 3px solid #ffbb00;
+    display: block;
+    width: 60%;
+}
+
+.navbar .get-app {
+    margin: 1.5rem 0;
+}
+
+
+/* showcase */
+#showcase {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+
+    display: grid;
+    grid-template-areas:    "second"
+                            "first";
+}
+
+#showcase .first-column {
+    grid-area: first;
+
+    display: grid;
+    grid-template-areas:    "title"
+                            "ingress"
+                            "buttons";
+}
+#showcase .title {
+    grid-area: title;
+    font-weight: 700;
+}
+#showcase .ingress {
+    grid-area: ingress;
+    margin: 0.5rem 0;
+}
+
+#showcase .buttons {
+    grid-area: buttons;
+
+    display:grid;
+    grid-template-areas: "watch"
+                         "download";
+}
+
+#showcase .buttons .download {
+    grid-area: download;
+    color: #333333;
+    border-color: #333333;
+    margin: 0rem 0;
+}
+#showcase .buttons .watch {
+    grid-area: watch;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    outline: none;   
+}
+
+#showcase .buttons .watch .d-flex {
+    justify-content: center;
+}
+
+#showcase .second-column {
+    grid-area: second;
+}
+#showcase .second-column .mobiles {
+    width: 100%;
+    margin: 1rem 0;
+}
+
+/* about us */
+#about-us {
+    text-align: center;
+    display: grid;
+    grid-template-areas:    "second"
+                            "first";
+
+    padding-bottom: 3rem;
+}
+
+#about-us .first-column {
+    grid-area: first;
+    display: grid;
+    grid-template-areas:    "tile"
+                            "title"
+                            "ingress"
+                            "buttons";     
+}
+
+#about-us .first-column .section-tile {
+    grid-area: tile;
+    display: none;
+    background-color: rgba(255,187,0,0.15);
+    color:#ffbb00;
+    padding: 0.4rem 1rem;
+    border-radius: 7px;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    margin: 1.25rem 0;
+    text-align: center;
+    width: 20%;
+}
+#about-us .first-column .title {
+    grid-area: title;
+    display: none;
+}
+#about-us .first-column .ingress {
+    grid-area: ingress;
+    display: none;
+}
+#about-us .first-column .buttons {
+    grid-area: buttons;
+    margin: 0rem 0;
+}
+#about-us .first-column .buttons .store-button {
+    margin: 1rem 0;
+}
+
+#about-us .second-column {
+    grid-area: second;
+    position: relative;
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+}
+
+#about-us .second-column .iphone {
+    width: 70%;
+}
+
+#about-us .second-column .circles {
+    position: absolute;
+    width: 90%;
+    top: 100px;
+    left: 15px;
+    z-index: -1;
+    animation: rotate 4s linear infinite;
+}
+
+/* features */
+#features {
+    background: #F5F5F5;
+    position: relative;
+    display: grid;
+    /* grid-template-columns: 1fr minmax(768px,1320px) 1fr; */
+    grid-template-areas: "middle";
+
+
+}
+
+#features .left {
+    grid-area: left;
+    text-align: left;
+    display: none;
+}
+#features .middle {
+    grid-area: middle;
+    text-align: left;
+}
+#features .right {
+    grid-area: right;
+    text-align: right;
+    display: none;
+}
+
+
+
+
+@media (min-width: 768px) {
+    header {
+        background: url(../images/bg.png) no-repeat;
+        background-size: contain;
+        min-height: 40vh;
+    }
+
+    .navbar {
+        background-color: transparent;
+    }
+
+    .navbar .get-app {
+        margin: 0 0;
+    }
+    
+
+    #showcase {
+        align-items: center;
+        color: #fff;
+        text-align: left;
+        grid-template-columns: 2fr 1fr;
+        grid-template-areas:   "first second";
+    }
+
+    #showcase .first-column {
+        margin-left: 5rem;
+    }
+
+    #showcase .first-column .title,
+    #showcase .first-column .ingress,
+    #showcase .first-column .buttons {
+        width: 90%;
+    }
+
+    #showcase .first-column .buttons {
+        display: flex;
+        align-items: center;
+        
+    }
+
+    #showcase .buttons .download {
+        color: #fff;
+        border-color: #fff;
+    }
+
+    #showcase .buttons .watch {
+        color: #fff;
+    }
+
+    #showcase .buttons .watch .d-flex {
+        justify-content: flex-start;
+    }
+
+    #about-us {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "second first";
+
+        text-align: left;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    #about-us .first-column .section-tile,
+    #about-us .first-column .title, 
+    #about-us .first-column .ingress {
+        display: inline-block;
+    }
+
+    #about-us .second-column {
+        text-align: center;
+    }
+
+    #about-us .second-column .iphone {
+        width: 60%;
+        position: relative;
+        left: -7px;
+    }
+
+
+}
+
+@media (min-width: 1200px) {
+    .navbar-dark .navbar-nav .nav-link {
+        margin-right: 3.5rem;
+    }    
+
+    #showcase {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:   "first second";
+    }
+
+    #showcase .first-column .title,
+    #showcase .first-column .ingress,
+    #showcase .first-column .buttons {
+        width: 100%;
+    }
+
+    #showcase .first-column .title {
+        font-size: 55px;
+    }
+
+    #showcase .second-column {
+        text-align: right;
+    }
+    #showcase .second-column .mobiles {
+        width: 80%;
+    }
+
+    #about-us .first-column .buttons .store-button {
+        margin-right: 1rem;
+    }
+
+    #about-us .second-column {
+        text-align: left;
+    }
+
+    #about-us .second-column #phone2 {
+        position: absolute;
+        z-index: -1;
+        transform: rotate(-25deg);
+        width: 50%;
+        left: -148px;
+        top: 100px;
+    }
+
+    #about-us .second-column .circles {
+        left: -100px;
+        z-index: -2;
+    }
+
+    #features {
+        grid-template-columns: 1fr minmax(768px,1320px) 1fr;
+        grid-template-areas: "left middle right";
+    }
+
+    #features .left {
+        display: block;
+    }
+    #features .right {
+        display: block;
+    }
+}
+
+

@@ -1,0 +1,17 @@
+<svg id="Component_1_1" data-name="Component 1 – 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="482.074" height="347.203" viewBox="0 0 482.074 347.203">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#1487fd"/>
+      <stop offset="1" stop-color="#42a0ff"/>
+    </linearGradient>
+  </defs>
+  <g id="Ellipse_62" data-name="Ellipse 62" transform="translate(242.404 17.314)" fill="none" stroke="#fb0" stroke-width="50">
+    <circle cx="119.835" cy="119.835" r="119.835" stroke="none"/>
+    <circle cx="119.835" cy="119.835" r="94.835" fill="none"/>
+  </g>
+  <circle id="Ellipse_65" data-name="Ellipse 65" cx="46.932" cy="46.932" r="46.932" transform="translate(0 228.734)" fill="url(#linear-gradient)"/>
+  <g id="Ellipse_58" data-name="Ellipse 58" transform="translate(37.363)" fill="#fff" stroke="#e8e8e8" stroke-width="1">
+    <circle cx="173.601" cy="173.601" r="173.601" stroke="none"/>
+    <circle cx="173.601" cy="173.601" r="173.101" fill="none"/>
+  </g>
+</svg>

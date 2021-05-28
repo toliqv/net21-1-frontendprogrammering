@@ -1,0 +1,20 @@
+
+			HEADER
+			row
+			Logo+Ellipse 	Nav	Button 
+			/row
+			
+			MAIN
+			row
+			div-header
+			div-ingress	
+			div Button Button Textlink
+			/row
+
+			Imagearea
+			
+
+			FOOTER
+
+
+Hej Tommy, i Adobe XD; ska vi exportera Group 4634 och Rectangle 1914 som separata .png och lägga som dubbla bakgrundsbilder under huvudmenyn och använda oss av opacitet och z-index osv för respektive lager? Eller räcker det med att jag exporterar de två lagren som en och samma .png och positionerar? 
